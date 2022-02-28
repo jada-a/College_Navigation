@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'colleges.dart';
 
 void main() {
@@ -73,27 +72,43 @@ class _MyHomePageState extends State<MyHomePage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                OutlinedButton(onPressed: (){}, child: const Text('CUNY',), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const CCNY()));
+                },
+                    child: const Text('CCNY',), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.blue
                 )),
                 OutlinedButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Ou()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OU()));
                 },
                     child: const Text('OU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.orange
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('OSU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const OSU()));
+                },
+                    child: const Text('OSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.lightGreen
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('KU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const KU()));
+                },
+                    child: const Text('KU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.teal
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('MIT'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MIT()));
+                },
+                    child: const Text('MIT'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.deepPurple
                 )),
@@ -104,25 +119,41 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Wsu()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const WSU()));
                 },
                     child: const Text('WSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.orange
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('NYU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const NYU()));
+                },
+                    child: const Text('NYU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.lightGreen
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('OPSU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OPSU()));
+                },
+                    child: const Text('OPSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.teal
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('RICE'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const RICE()));
+                },
+                    child: const Text('RICE'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.deepPurple
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('BROWN'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const BROWN()));
+                    },
+                    child: const Text('BROWN'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.blue
                 )),
@@ -131,23 +162,43 @@ class _MyHomePageState extends State<MyHomePage> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly, //Jada Alvarez
               children: [
-                OutlinedButton(onPressed: (){}, child: const Text('ISU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ISU()));
+                    },
+                    child: const Text('ISU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.lightGreen
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('DUKE'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const DUKE()));
+                    },
+                    child: const Text('DUKE'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.teal
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('BU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const BU()));
+                    },
+                    child: const Text('BU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.deepPurple
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('BSU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const BSU()));
+                    },
+                    child: const Text('BSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.blue
                 )),
-                OutlinedButton(onPressed: (){}, child: const Text('HU'), style: OutlinedButton.styleFrom(
+                OutlinedButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HU()));
+                    },
+                    child: const Text('HU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.orange
                 )),
