@@ -1,23 +1,30 @@
+import 'cities.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WSU extends StatelessWidget {
+
   const WSU({Key? key}) : super(key: key);
 
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFFDCC00);
     return Scaffold(
-      appBar: AppBar(title: const Text('Wichita State University')),
+      appBar: AppBar(title: const Text('Wichita State University'), backgroundColor: primaryColor,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('Wichita State University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
+                  Image.asset('lib/images/wsu_logo.png', width: 100, height: 100,fit: BoxFit.fitHeight),
+                  Text('Wichita State University',
+                      style: GoogleFonts.libreBaskerville(
+                          textStyle: Theme.of(context).textTheme.titleLarge,
+                          fontWeight: FontWeight.bold))
                 ],
               )
           ),
@@ -29,6 +36,9 @@ class WSU extends StatelessWidget {
                   Text('Quick Facts:', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleMedium)),
                   Text('Computer Science Tuition: 18000', style: GoogleFonts.libreBaskerville(fontSize: 13)),
                   Text('located in Wichita, KS', style: GoogleFonts.libreBaskerville(fontSize: 13)),
+                  OutlinedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Wichita()));
+                  }, child: const Text('City')),
                   Text('Jada Alvarez', style: GoogleFonts.libreBaskerville(fontSize: 13, color: Colors.grey))
                 ],
               )
@@ -48,16 +58,18 @@ class OU extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF831617);
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Oklahoma University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/ou_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Oklahoma University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -89,16 +101,18 @@ class CCNY extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF7E55C5);
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('City College of New York'), backgroundColor: primaryColor,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/ccny_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('City College of New York', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -131,7 +145,7 @@ class OSU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Ohio State University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -172,7 +186,7 @@ class KU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('University of Kansas')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -192,7 +206,7 @@ class KU extends StatelessWidget {
                 children: [
                   Text('Quick Facts:', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleMedium)),
                   Text('Computer Science Tuition: 28,034', style: GoogleFonts.libreBaskerville(fontSize: 13)),
-                  Text('located in Lawerence, KS', style: GoogleFonts.libreBaskerville(fontSize: 13)),
+                  Text('located in Lawrence, KS', style: GoogleFonts.libreBaskerville(fontSize: 13)),
                   Text('Jada Alvarez', style: GoogleFonts.libreBaskerville(fontSize: 13, color: Colors.grey))
                 ],
               )
@@ -213,7 +227,7 @@ class MIT extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Massachusetts Institute of Technology')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -254,7 +268,7 @@ class NYU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('New York University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -293,7 +307,7 @@ class OPSU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Oklahoma Panhandle State University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -332,7 +346,7 @@ class RICE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Rice University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -371,7 +385,7 @@ class BROWN extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Brown University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -410,7 +424,7 @@ class ISU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Illinois State University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -449,7 +463,7 @@ class DUKE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Duke University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -488,7 +502,7 @@ class BU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Boston University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -527,7 +541,7 @@ class BSU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Boise State University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -567,7 +581,7 @@ class HU extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma University')),
+      appBar: AppBar(title: const Text('Harvard University')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
