@@ -103,7 +103,7 @@ class CCNY extends StatelessWidget {
   Widget build(BuildContext context) {
     const primaryColor = Color(0xFF7E55C5);
     return Scaffold(
-      appBar: AppBar(title: const Text('City College of New York'), backgroundColor: primaryColor,),
+      appBar: AppBar(title: const Text('City College of New York'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
@@ -144,16 +144,18 @@ class OSU extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFCD0F3D);
     return Scaffold(
-      appBar: AppBar(title: const Text('Ohio State University')),
+      appBar: AppBar(title: const Text('Ohio State University'),backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/osu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Ohio State University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -185,16 +187,18 @@ class KU extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF0051B9);
     return Scaffold(
-      appBar: AppBar(title: const Text('University of Kansas')),
+      appBar: AppBar(title: const Text('University of Kansas'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/ku_logo.png', width: 120, height: 100, fit: BoxFit.fitHeight),
                   Text('University of Kansas', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -226,16 +230,18 @@ class MIT extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFA21F34);
     return Scaffold(
-      appBar: AppBar(title: const Text('Massachusetts Institute of Technology')),
+      appBar: AppBar(title: const Text('Massachusetts Institute of Technology'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/mit_logo.png', width: 200, height: 100, fit: BoxFit.fitHeight),
                   Text('Massachusetts Institute of Technology', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleMedium, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -267,16 +273,18 @@ class NYU extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF64018F);
     return Scaffold(
-      appBar: AppBar(title: const Text('New York University')),
+      appBar: AppBar(title: const Text('New York University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/nyu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('New York University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -306,16 +314,18 @@ class OPSU extends StatelessWidget {
   const OPSU({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFCE152D);
     return Scaffold(
-      appBar: AppBar(title: const Text('Oklahoma Panhandle State University')),
+      appBar: AppBar(title: const Text('Oklahoma Panhandle State University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/opsu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Oklahoma Panhandle State University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleMedium, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -345,16 +355,18 @@ class RICE extends StatelessWidget {
   const RICE({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF002168);
     return Scaffold(
-      appBar: AppBar(title: const Text('Rice University')),
+      appBar: AppBar(title: const Text('Rice University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/rice_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Rice University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -384,16 +396,18 @@ class BROWN extends StatelessWidget {
   const BROWN({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF532C13);
     return Scaffold(
-      appBar: AppBar(title: const Text('Brown University')),
+      appBar: AppBar(title: const Text('Brown University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/brown_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Brown University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -423,16 +437,18 @@ class ISU extends StatelessWidget {
   const ISU({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFE31937);
     return Scaffold(
-      appBar: AppBar(title: const Text('Illinois State University')),
+      appBar: AppBar(title: const Text('Illinois State University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/isu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Illinois State University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -462,16 +478,18 @@ class DUKE extends StatelessWidget {
   const DUKE({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF001A56);
     return Scaffold(
-      appBar: AppBar(title: const Text('Duke University')),
+      appBar: AppBar(title: const Text('Duke University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/duke_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Duke University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -501,16 +519,18 @@ class BU extends StatelessWidget {
   const BU({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFCB0000);
     return Scaffold(
-      appBar: AppBar(title: const Text('Boston University')),
+      appBar: AppBar(title: const Text('Boston University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/bu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Boston University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -540,16 +560,18 @@ class BSU extends StatelessWidget {
   const BSU({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFF00339F);
     return Scaffold(
-      appBar: AppBar(title: const Text('Boise State University')),
+      appBar: AppBar(title: const Text('Boise State University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:  [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/bsu_logo.png', width: 120, height: 100, fit: BoxFit.fitHeight),
                   Text('Boise State University', style: GoogleFonts.libreBaskerville(textStyle: Theme.of(context).textTheme.titleLarge, fontWeight: FontWeight.bold)),
                 ],
               )
@@ -580,16 +602,18 @@ class HU extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = Color(0xFFA41C30);
     return Scaffold(
-      appBar: AppBar(title: const Text('Harvard University')),
+      appBar: AppBar(title: const Text('Harvard University'), backgroundColor: primaryColor),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
-              width: 470, height: 50, margin: const EdgeInsets.all(20),
+              width: 470, height: 128, margin: const EdgeInsets.all(20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset('lib/images/hu_logo.png', width: 100, height: 100, fit: BoxFit.fitHeight),
                   Text('Harvard University',
                       style: GoogleFonts.libreBaskerville(textStyle: Theme
                           .of(context)

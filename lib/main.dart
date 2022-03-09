@@ -74,40 +74,40 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const CCNY()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CCNY()));//Jada Alvarez
+                    },
                     child: const Text('CCNY',), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.blue
                 )),
                 OutlinedButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OU()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OU()));//Jada Alvarez
+                    },
                     child: const Text('OU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.orange
                 )),
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const OSU()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const OSU()));//Jada Alvarez
+                    },
                     child: const Text('OSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.lightGreen
                 )),
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const KU()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const KU()));
+                    },
                     child: const Text('KU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.teal
                 )),
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MIT()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const MIT()));
+                    },
                     child: const Text('MIT'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.deepPurple
@@ -119,8 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 OutlinedButton(
                     onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const WSU()));
-                },
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const WSU()));
+                    },
                     child: const Text('WSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.orange
@@ -128,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 OutlinedButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const NYU()));
-                },
+                    },
                     child: const Text('NYU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.lightGreen
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 OutlinedButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const OPSU()));
-                },
+                    },
                     child: const Text('OPSU'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.teal
@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 OutlinedButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const RICE()));
-                },
+                    },
                     child: const Text('RICE'), style: OutlinedButton.styleFrom(
                     primary: Colors.black,
                     backgroundColor: Colors.deepPurple
