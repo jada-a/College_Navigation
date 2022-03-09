@@ -43,9 +43,16 @@ class WSU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                primary: Colors.white,
+                backgroundColor: primaryColor
+              ),
+              onPressed: () {
             Navigator.pop(context);
-          }, child: const Text('Back'))
+          }
+          ),
         ],
       ),
     );
@@ -86,9 +93,16 @@ class OU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -129,9 +143,16 @@ class CCNY extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -172,9 +193,16 @@ class OSU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -215,9 +243,16 @@ class KU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -258,9 +293,16 @@ class MIT extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -301,9 +343,16 @@ class NYU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -342,9 +391,16 @@ class OPSU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -383,9 +439,16 @@ class RICE extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -424,9 +487,16 @@ class BROWN extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -465,9 +535,16 @@ class ISU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -506,9 +583,16 @@ class DUKE extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -547,9 +631,16 @@ class BU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -588,9 +679,16 @@ class BSU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: (){
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
@@ -641,9 +739,16 @@ class HU extends StatelessWidget {
                 ],
               )
           ),
-          OutlinedButton(onPressed: () {
-            Navigator.pop(context);
-          }, child: const Text('Back'))
+          OutlinedButton.icon(icon:  const Icon(Icons.arrow_back),
+              label: const Text('Back'),
+              style: OutlinedButton.styleFrom(
+                  primary: Colors.white,
+                  backgroundColor: primaryColor
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
         ],
       ),
     );
